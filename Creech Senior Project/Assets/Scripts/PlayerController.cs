@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
         // Press B to run 
 
-        bool isRunning = Input.GetKey(KeyCode.Q);
+        bool isRunning = Input.GetKey(KeyCode.V);
         float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float moveDirectionY = moveDirection.y;
