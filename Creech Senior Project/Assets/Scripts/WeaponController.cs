@@ -24,6 +24,7 @@ public class WeaponController : MonoBehaviour
         CanAttack = false;
         Animator anim = Sword.GetComponent<Animator>();
         anim.SetTrigger("Attack");
+        StartCoroutine(ResetAttackCooldown());
     }
 
 
