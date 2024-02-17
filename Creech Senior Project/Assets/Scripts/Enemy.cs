@@ -9,7 +9,9 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     public float howclose;
     public string Name;
-    
+
+    Rigidbody rb;
+
 
 
 

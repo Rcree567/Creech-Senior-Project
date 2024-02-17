@@ -25,4 +25,18 @@ public class PlayerHealth : MonoBehaviour
         slider.value = health;
         text.text = "Health :" + health;
     }
+
+    void OnCollisionEnter(Collision obj)
+    {
+        if (obj.gameObject.tag == "Enemies")
+            health = health - 20f;
+
+        //game over
+        if (health <= 0)
+        {
+
+           
+            Destroy(this.gameObject);
+        }
+    }
 }
