@@ -4442,6 +4442,13 @@ MonoBehaviour:
   CanAttack: 1
   AttackCooldown: 1
   SwordAttackSound: {fileID: 8300000, guid: b370fe7e7f4795440ab73c3052bfddb4, type: 3}
+  attackDistance: 3
+  attackDelay: 0.4
+  attackSpeed: 1
+  attackDamage: 1
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!82 &603921621
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10755,7 +10762,6 @@ GameObject:
   - component: {fileID: 1332244252}
   - component: {fileID: 1332244254}
   - component: {fileID: 1332244255}
-  - component: {fileID: 1332244256}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10913,18 +10919,6 @@ MonoBehaviour:
   slider: {fileID: 2077883383}
   text: {fileID: 112838344}
   maxHealth: 100
---- !u!114 &1332244256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332244247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d80875f93c8ae1449a1249fe9fd5cdac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1336234906
 GameObject:
   m_ObjectHideFlags: 0
@@ -22966,11 +22960,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa40f29b497b504a8cd663d9484b45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wp: {fileID: 603921620}
-  Enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  attackDistance: 3
+  attackDelay: 0.4
+  attackSpeed: 1
+  attackDamage: 1
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &919132148999457022
 GameObject:
   m_ObjectHideFlags: 0

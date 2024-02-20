@@ -4,16 +4,39 @@ using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
-    public WeaponController wp;
-    public GameObject[]Enemies;
+    public float attackDistance = 3f;
+    public float attackDelay = 0.4f;
+    public float attackSpeed = 1f;
+    public int attackDamage = 1;
+    public LayerMask attackLayer;
+
+    bool attacking = false;
+    bool readyToAttack = true;
+    int attackCount;
 
 
-    private void OnTrigger(Collider other)
+    public void Attack()
     {
-        if(other.gameObject.CompareTag("Enemies"))
+        if (!readyToAttack || attacking) return;
+        
+        readyToAttack = false;
+        attacking = true;
+
+        Invoke(nameof(ResetAttack), attackSpeed);
+        
+    }
+
+    void ResetAttack()
+    {
+        attacking = false;
+        readyToAttack = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemies")
         {
             Destroy(other.gameObject);
-            
         }
     }
 }

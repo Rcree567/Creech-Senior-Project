@@ -10,11 +10,17 @@ public class Enemy : MonoBehaviour
     public float howclose;
     public string Name;
 
+    int currentHealth;
+    public int maxHealth;
+
     Rigidbody rb;
 
 
 
-
+    void Awake()
+    {
+        currentHealth = maxHealth;
+    }
 
 
 
@@ -44,6 +50,13 @@ public class Enemy : MonoBehaviour
 
     }
 
+    public void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+
+        if (currentHealth < -0);
+        Destroy(gameObject);
+    }
 
 
 
