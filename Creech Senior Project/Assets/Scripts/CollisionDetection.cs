@@ -1,42 +1,16 @@
 using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
-    public float attackDistance = 3f;
-    public float attackDelay = 0.4f;
-    public float attackSpeed = 1f;
-    public int attackDamage = 1;
-    public LayerMask attackLayer;
 
-    bool attacking = false;
-    bool readyToAttack = true;
-    int attackCount;
-
-
-    public void Attack()
+    private void OnTriggerEnter(Collision collision)
     {
-        if (!readyToAttack || attacking) return;
-        
-        readyToAttack = false;
-        attacking = true;
-
-        Invoke(nameof(ResetAttack), attackSpeed);
-        
-    }
-
-    void ResetAttack()
-    {
-        attacking = false;
-        readyToAttack = true;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Enemies")
+        if(collision.collider.gameObject.tag == "Enemies")
         {
-            Destroy(other.gameObject);
+            collision.gameObject.GetComponent<Enemies>().TakeDamage(1);
         }
     }
+
 }
