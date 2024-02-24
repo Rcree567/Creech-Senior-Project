@@ -27,7 +27,7 @@ public class Enemies : MonoBehaviour
     {
         if(col.gameObject.tag == "Sword")
         {
-            maxHealth -= 5;
+            maxHealth -= 10;
             Destroy(gameObject);
         }
     }
