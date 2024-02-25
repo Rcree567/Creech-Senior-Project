@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
+    
+
     public int maxHealth = 5;
     public int currentHealth;
+    
 
-
-   void Start()
+    void Start()
     {
+        
         currentHealth = maxHealth; 
     }
 
@@ -31,4 +34,7 @@ public class Enemies : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
+
 }

@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
@@ -26,10 +26,10 @@ public class PlayerHealth : MonoBehaviour
         text.text = "Health :" + health;
     }
 
-    void OnCollisionEnter(Collision obj)
+    void OnCollisionEnter(Collision col)
     {
-        if (obj.gameObject.tag == "Enemies")
-            health = health - 20f;
+        if (col.gameObject.tag == "Enemies")
+            health -= 20f;
 
         //game over
         if (health <= 0)
@@ -39,4 +39,5 @@ public class PlayerHealth : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    
 }
