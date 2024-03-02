@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         {
             health = health - 10;
         }
-
+        
         
     }
 }
