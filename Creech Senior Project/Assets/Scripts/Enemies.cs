@@ -11,6 +11,8 @@ public class Enemies : MonoBehaviour
 
     public int maxHealth = 5;
     public int currentHealth;
+
+    public float damage;
     
 
     void Start()
@@ -36,6 +38,7 @@ public class Enemies : MonoBehaviour
             maxHealth -= 10;
             Destroy(gameObject);
         }
+        
     }
 
     void Update()
@@ -54,5 +57,11 @@ public class Enemies : MonoBehaviour
             //do damage
         }
     }
+
+    
+
+
+
+
 
 }

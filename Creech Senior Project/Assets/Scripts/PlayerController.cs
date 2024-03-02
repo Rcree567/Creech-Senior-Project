@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 [RequireComponent(typeof(CharacterController))]
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         
-
+        
     }
 
     void Update()
@@ -99,7 +100,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    
   
+
 
 
 
