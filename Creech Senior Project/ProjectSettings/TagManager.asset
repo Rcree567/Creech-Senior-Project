@@ -7,6 +7,7 @@ TagManager:
   - Enemies
   - Powerup
   - Sword
+  - Ground
   layers:
   - Default
   - TransparentFX
