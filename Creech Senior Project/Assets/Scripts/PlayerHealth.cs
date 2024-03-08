@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 100;
 
 
-
+    public GameObject gameOverScreen;
 
    
 
@@ -28,6 +28,8 @@ public class PlayerHealth : MonoBehaviour
         slider.value = health;
         text.text = "Health :" + health;
 
+       
+
 
     }
     void OnCollisionEnter(Collision collision)
@@ -37,6 +39,14 @@ public class PlayerHealth : MonoBehaviour
             health = health - 10;
         }
         
+        //You Have Died
+        if(health <= 0)
+        {
+            gameOverScreen.SetActive(true);
+            
+            
+        }
         
     }
+    
 }
