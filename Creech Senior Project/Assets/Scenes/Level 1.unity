@@ -18362,7 +18362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1265881404780101373, guid: ed7329d0900ba934594b46a955b444dd, type: 3}
       propertyPath: m_Constraints
-      value: 112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1593123162043570461, guid: ed7329d0900ba934594b46a955b444dd, type: 3}
       propertyPath: m_RootOrder
@@ -18500,7 +18500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4744321541965673890, guid: b0e4113d40d73474e8a172ea9794839b, type: 3}
       propertyPath: m_Constraints
-      value: 112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4744321541965673891, guid: b0e4113d40d73474e8a172ea9794839b, type: 3}
       propertyPath: m_Size.x
@@ -18579,6 +18579,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5058047051904979344, guid: 22c453bdc22e4c741b0cb90112dcf527, type: 3}
+      propertyPath: gravity
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058047051904979344, guid: 22c453bdc22e4c741b0cb90112dcf527, type: 3}
+      propertyPath: jumpPower
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5058047051904979347, guid: 22c453bdc22e4c741b0cb90112dcf527, type: 3}
       propertyPath: text
       value: 
@@ -18788,7 +18796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7582371456832933618, guid: c949d31e4efb2e94581f969243f86bea, type: 3}
       propertyPath: m_Constraints
-      value: 112
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7582371456832933629, guid: c949d31e4efb2e94581f969243f86bea, type: 3}
       propertyPath: m_Size.y

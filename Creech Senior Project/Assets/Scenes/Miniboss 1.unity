@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 774757316}
   - component: {fileID: 774757315}
   - component: {fileID: 774757314}
+  - component: {fileID: 774757319}
   m_Layer: 0
   m_Name: DemoEnemy
   m_TagString: Enemies
@@ -563,7 +564,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &774757315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -640,6 +641,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774757319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774757313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b89fd3bae2caf042af741d9f48dfcfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  howclose: 10
+  maxHealth: 100
+  Health: 0
+  damage: 0
 --- !u!1 &928697819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,11 +1465,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4809058685459251600}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06256266, y: 0.0051346375, z: 0.051840458}
-  m_Center: {x: -0.0006882731, y: -0.001252819, z: -0.0063956245}
+  m_Size: {x: 0.046334993, y: 0.0051346375, z: 0.05016755}
+  m_Center: {x: 0.00019190618, y: -0.001252819, z: -0.0055591804}
 --- !u!4 &5329699862646496042
 Transform:
   m_ObjectHideFlags: 0
