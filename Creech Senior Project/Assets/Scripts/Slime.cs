@@ -36,6 +36,11 @@ public class Slime : MonoBehaviour
         if (col.gameObject.tag == "Sword")
         {
             maxHealth -= 10;
+
+            if(maxHealth <= 0)
+            {
+                Die();
+            }
             
         }
 
@@ -56,6 +61,11 @@ public class Slime : MonoBehaviour
         {
             //do damage
         }
+    }
+
+   void Die()
+    {
+        Destroy (gameObject);
     }
 
 
