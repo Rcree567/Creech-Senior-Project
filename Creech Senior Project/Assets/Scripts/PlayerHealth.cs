@@ -43,10 +43,16 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0)
         {
             gameOverScreen.SetActive(true);
+
+            Die();
             
             
         }
         
+    }
+    void Die()
+    {
+        Destroy(gameObject);
     }
     
 }
