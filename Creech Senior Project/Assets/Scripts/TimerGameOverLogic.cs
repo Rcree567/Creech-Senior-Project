@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TimerGameOverLogic : MonoBehaviour
 {
-    int countDownStartValue = 1500;
+    int countDownStartValue = 1800;
     public Text timerUI;
 
     //Start is called before the first update
