@@ -2633,8 +2633,12 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5000656474659295094, guid: 5d3ab49a1dba997439a056bb9c804aee, type: 3}
+      propertyPath: howclose
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000656474659295094, guid: 5d3ab49a1dba997439a056bb9c804aee, type: 3}
       propertyPath: moveSpeed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5000656474659295095, guid: 5d3ab49a1dba997439a056bb9c804aee, type: 3}
       propertyPath: m_RootOrder
