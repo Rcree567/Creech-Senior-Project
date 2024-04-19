@@ -5,9 +5,6 @@ using UnityEngine;
 public class Slime : MonoBehaviour
 {
     private Transform Player;
-    private float dist;
-    public float moveSpeed;
-    public float howclose;
 
     public int maxHealth = 100;
     public int Health;
@@ -15,12 +12,12 @@ public class Slime : MonoBehaviour
     public float damage;
 
 
+    // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         Health = maxHealth;
     }
-
 
     public void TakeDamage(int amount)
     {
@@ -37,37 +34,16 @@ public class Slime : MonoBehaviour
         {
             maxHealth -= 10;
 
-            if(maxHealth <= 0)
+            if (maxHealth <= 0)
             {
                 Die();
             }
-            
+
         }
 
     }
-
-    void Update()
+    void Die()
     {
-        dist = Vector3.Distance(Player.position, transform.position);
-
-        if (dist <= howclose)
-        {
-            transform.LookAt(Player);
-            GetComponent<Rigidbody>().AddForce(transform.forward * moveSpeed);
-        }
-
-        //for melee attack 
-        if (dist <= 1.5f)
-        {
-            //do damage
-        }
+        Destroy(gameObject);
     }
-
-   void Die()
-    {
-        Destroy (gameObject);
-    }
-
-
-
 }
