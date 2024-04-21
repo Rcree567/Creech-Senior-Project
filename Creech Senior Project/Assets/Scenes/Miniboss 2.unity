@@ -2646,6 +2646,18 @@ PrefabInstance:
       value: Door 2
       objectReference: {fileID: 0}
     - target: {fileID: 3580062420567584419, guid: 6d2e0d613ad8c544baafb5bf51bd1088, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4562439
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580062420567584419, guid: 6d2e0d613ad8c544baafb5bf51bd1088, type: 3}
+      propertyPath: m_Size.z
+      value: 0.9999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580062420567584419, guid: 6d2e0d613ad8c544baafb5bf51bd1088, type: 3}
+      propertyPath: m_Center.x
+      value: -0.22812194
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580062420567584419, guid: 6d2e0d613ad8c544baafb5bf51bd1088, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
